@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
-    
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
     background: rgb(39, 128, 86);
+    background-image: url("../img/photo-1488415032361-b7e238421f1b.webp");
    
 }
 
@@ -14,24 +16,25 @@ body{
 header{
     display: grid;
     grid-area: he; 
-    height: 15vh;    
-    width: 100%;
-    background-color: rgba(130, 192, 124, 0.705);
+   
     grid-template-columns: 20% 80%;
     grid-template-rows: auto;
     grid-template-areas:
     "brg akt";
+    border-radius: 5px;
 }
 
 #header_2{
-    
-
+   background-color: rgba(240, 255, 255, 0.034);
+   border-radius: 35px;
 }
+
 
 #content_akt{
 
 
     display: grid;
+   
     grid-auto-rows: 50vh 50vh 50vh 50vh;
     grid-auto-columns: 50% 50%;   
     grid-template-areas: 
@@ -45,7 +48,7 @@ header{
     cursor: pointer;
     display: flex;
     height: 12vh;
-    border-radius: 50px;
+    border-radius: 35px;
     margin: 1.25vh;
     justify-content: center;
     align-items: center;
@@ -73,6 +76,7 @@ nav {
     width: 250px;
     list-style: none;
     transition: all 0.5s;
+    border-radius: 5px;
 }
 #nav-links a {
     text-decoration: none;
@@ -108,7 +112,7 @@ nav {
 .frame{
     padding: 0.8rem;
     margin: 0.2rem;
-    background: rgba(199, 219, 150, 0.562)
+    background-color: rgba(130, 192, 124, 0.705);
 }
 #burger {
     width: 10%;
@@ -211,8 +215,8 @@ h3{
 
 #area_1{
     grid-area: a1;
-    background: rgba(255, 0, 0, 0.055);
-   
+    background: rgba(74, 177, 142, 0.075);
+    border-radius: 35px;
     margin: 10px
     
 }
@@ -221,26 +225,37 @@ h3{
     grid-area: a2;
     margin: 10px;
     background-color: rgba(0, 255, 255, 0.158);
+    background-image: url("../img/bit.jpg");
+    background-size: cover;
+    border-radius: 35px;
+
+
+    
 }
 #area_3{
     grid-area: a3;
     margin: 10px;
     background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;
+    background-image: url("../img/risk.jpg");
 }
 #area_4{
     grid-area: a4;
     margin: 10px;
     background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;
 }
 #area_5{
     grid-area: a5;
     margin: 10px;
     background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;
 }
 #area_6{
     grid-area: a6;
     margin: 10px;
     background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;    
 }
 
 @media screen and (min-width: 800px) {
@@ -250,6 +265,18 @@ h3{
 
     }    
 
+    header{
+     
+        display: grid;
+        grid-area: he; 
+       
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "brg akt";
+        border-radius: 5px;
+        
+    }
      
     #grid_wrapper{
         grid-auto-columns: 1fr 1fr 1fr;
@@ -288,9 +315,11 @@ h3{
     }
 
     .logo-container{
-        margin-left: 0vw;
+     
         grid-area: bild_2;
     }
+
+    
     #logo{
         width: 300px;
         margin-top: 10vh;

@@ -29,6 +29,20 @@ header{
    border-radius: 35px;
 }
 
+#grid_wrapper{
+
+    display: grid;
+    grid-auto-rows: 15vh 80vh 5vh 45% 20% 20% 20%; 
+    grid-template-areas: 
+    "he he"
+    "na bild"
+    "c1 c2"
+    "c1 c2"
+    "c3 c9"
+    "c4 c4"
+    "c5 c6"
+    "c5 c6" ;
+}
 
 #content_akt{
 
@@ -153,15 +167,6 @@ nav {
 }
 
 
-#grid_wrapper{
-
-    display: grid;
-    grid-auto-rows: 15vh 80vh 5vh;
-    grid-template-areas: 
-    "he he"
-    "na bild"
-    "fo fo" ;
-}
 
 
 
@@ -256,6 +261,44 @@ h3{
 }
 #area_6{
     grid-area: a6;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;    
+}
+#c1{
+    grid-area: c1;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;
+}
+#c2{
+    grid-area: c2;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;
+}
+#c3{
+    grid-area: c3;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;    
+}
+
+
+#c4{
+    grid-area: c4;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;
+}
+#c5{
+    grid-area: c5;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;
+}
+#c6{
+    grid-area: c6;
     margin: 10px;
     background-color: rgba(0, 255, 255, 0.158);
     border-radius: 35px;    

@@ -74,6 +74,26 @@ header{
     "a6";
 }
 
+#kontakt-wrapper{
+
+    display: grid;
+    grid-auto-rows: 25% 25% 25% 25%;
+    grid-auto-columns: 30% 70%;   
+    grid-template-areas: 
+    "k7 k7"
+    "k1 k2"
+    "k3 k4"
+    "k5 k6";
+
+}
+
+.kont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 #home-btn {
     cursor: pointer;
     display: flex;
@@ -201,31 +221,6 @@ nav {
 
 
 
-h1{
-    font-size: 32px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 3vh;
-    margin-left: 4vw;
-}
-
-h2{
-    margin-top: 2vh;
-    margin: 5vw;
-
-
-
-}
-
-h3{
-    background: rgb(175, 144, 104);
-    border-radius: 10px;  
-    padding: 40px;
-    border: 0px;
-    margin: 25px;
-
-
-
-}
 
 #logo{
     width: 300px;
@@ -430,10 +425,65 @@ h3{
     border-radius: 35px;    
 }
 
+#k1{
+    grid-area: k1;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;
+}
+#k2{
+    grid-area: k2;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;
+}
+#k3{
+    grid-area: k3;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;    
+}
+
+#k4{
+    grid-area: k4;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;
+}
+#k5{
+    grid-area: k5;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;
+}
+#k6{
+    grid-area: k6;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;    
+}
+#k7{
+    grid-area: k7;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;    
+}
+
+
+
+
+h1{
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3vh;
+    margin-left: 4vw;
+}
+
+
 
 
 h2{
-    background: rgb(179, 128, 63);
+    background: rgb(177, 137, 84);
     border-radius: 10px;  
     padding: 20px;
     border: 0px;
@@ -443,7 +493,7 @@ h2{
 }
 h3{
   
-    background: rgb(179, 128, 63);
+    background: rgb(177, 137, 84);
     border-radius: 10px;  
     padding: 40px;
     border: 0px;
@@ -511,6 +561,18 @@ h3{
         "f6 f4 ";
     }
 
+    #kontakt-wrapper{
+
+        display: grid;
+        grid-auto-rows: 25% 25% 25% 25%;
+        grid-auto-columns: 30% 70%;   
+        grid-template-areas: 
+        "k7 k7"
+        "k1 k2"
+        "k3 k4"
+        "k5 k6";
+        margin: 150px;
+    }
     nav {
         display: flex;
         justify-content: flex-end;
@@ -605,7 +667,7 @@ h3{
         border-radius: 35px;    
     }
     h2{
-        background: rgb(179, 129, 63);
+        background: rgb(177, 137, 84);
         border-radius: 10px;  
         padding: 20px;
         border: 0px;
@@ -615,7 +677,7 @@ h3{
     }
     h3{
       
-        background: rgb(179, 128, 63);
+        background: rgb(177, 137, 84);
         border-radius: 10px;  
         padding: 40px;
         border: 0px;

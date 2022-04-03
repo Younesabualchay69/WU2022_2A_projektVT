@@ -24,10 +24,6 @@ header{
     border-radius: 5px;
 }
 
-#header_2{
-   background-color: rgba(240, 255, 255, 0.034);
-   border-radius: 35px;
-}
 
 #grid_wrapper{
 
@@ -43,6 +39,10 @@ header{
     "c4 c4"
     "c5 c6"
     "c5 c6" ;
+}
+#header_2{
+   background-color: rgba(240, 255, 255, 0.034);
+   border-radius: 35px;
 }
 
 #content_akt{
@@ -63,15 +63,15 @@ header{
 
     display: grid;
    
-    grid-auto-rows: 50% 50% 50% 50%;
+    grid-auto-rows: 20% 25% 25% 25% 25% 25%;
     grid-auto-columns: 100%;   
     grid-template-areas: 
-    "a1"
-    "a2" 
-    "a3"
-    "a4" 
-    "a5" 
-    "a6";
+    "f1"
+    "f2" 
+    "f3"
+    "f4" 
+    "f5" 
+    "f6";
 }
 
 #kontakt-wrapper{
@@ -151,7 +151,7 @@ nav {
 
 }
 .priser {
-    cursor: no-drop;
+    cursor: pointer;
     display: flex;  
     height: 15vh;
     grid-area: akt;
@@ -618,7 +618,7 @@ h3{
     }
 
     .mer-priser {
-        cursor: no-drop;
+        cursor: pointer;
         display: flex;  
         height: 15vh;
         grid-area: akt_2;

@@ -8,19 +8,15 @@
 body{
     background: rgb(39, 128, 86);
     background-image: url("../img/photo-1488415032361-b7e238421f1b.webp");
-   
 }
-
 
 header{
     display: grid;
     grid-area: he; 
-   
     grid-template-columns: 20% 80%;
     grid-template-rows: auto;
     grid-template-areas:
     "brg akt";
-
     border-radius: 5px;
 }
 
@@ -29,13 +25,13 @@ header{
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 20vh 80vh 15% 20% 20% 20%; 
+    grid-auto-rows: 20vh 80vh 15% 15% 15% 15% 15% 5%; 
     grid-template-areas: 
     "he he"
     "bild bild"
     "c1 c2"
     "c1 c2"
-    "c3 c9"
+    "c3 c3"
     "c4 c4"
     "c5 c6"
     "c5 c6" ;
@@ -170,13 +166,10 @@ nav {
     background-color: rgba(130, 192, 124, 0.705);
 }
 
-
 .frame-n{
     background-color: rgba(209, 74, 74, 0.705);
     padding: 0.8rem;
     margin: 0.2rem;
-
-
 }
 
 
@@ -202,24 +195,12 @@ nav {
 .crossed_line #line_2 {
     opacity: 0;
 }
-
-
 .crossed_line #line_1 {
     transform: rotate(-45deg) translate(-8px, 7px);
 }
-
 .crossed_line #line_3 {
     transform: rotate(45deg) translate(-8px, -7px);
 }
-
-
-.artikel{ 
-    width: 20vw;
-    background-color: rgb(22, 148, 8);
-}
-
-
-
 
 
 #logo{
@@ -240,17 +221,6 @@ nav {
     transition: all 0.5s;
 
 }
-
-
-
-#kalkyl{
-    background: rgba(74, 177, 142, 0.075);
-    
-    border-radius: 35px;
-    margin: 10px
-}
-
-
 
 #area_1{
     grid-area: a1;
@@ -300,7 +270,7 @@ nav {
     margin: 30px;
     background-color: rgba(0, 255, 255, 0.158);
     border-radius: 35px;    
-        background-image: url("..//img/analys.webp");
+    background-image: url("..//img/analys.webp");
     background-size: cover;
     background-position: center;
     cursor: pointer;
@@ -317,8 +287,6 @@ nav {
     cursor: pointer;
 
 }
-
-
 
 #fond-area_1{
     grid-area: f1;
@@ -368,7 +336,7 @@ nav {
     margin: 30px;
     background-color: rgba(0, 255, 255, 0.158);
     border-radius: 35px;    
-        background-image: url("..//img/mone.jpg");
+    background-image: url("..//img/mone.jpg");
     background-size: cover;
     background-position: center;
     cursor: pointer;
@@ -386,24 +354,26 @@ nav {
 
 }
 
-
 #c1{
     grid-area: c1;
     margin: 10px;
     background-color: rgba(0, 255, 255, 0.158);
     border-radius: 35px;
+    cursor: pointer;
 }
 #c2{
     grid-area: c2;
     margin: 10px;
     background-color: rgba(0, 255, 255, 0.158);
     border-radius: 35px;
+    cursor: pointer;
 }
 #c3{
     grid-area: c3;
     margin: 10px;
     background-color: rgba(0, 255, 255, 0.158);
     border-radius: 35px;    
+    cursor: pointer;
 }
 
 #c4{
@@ -411,18 +381,21 @@ nav {
     margin: 10px;
     background-color: rgba(0, 255, 255, 0.158);
     border-radius: 35px;
+    cursor: pointer;
 }
 #c5{
     grid-area: c5;
     margin: 10px;
     background-color: rgba(0, 255, 255, 0.158);
     border-radius: 35px;
+    cursor: pointer;
 }
 #c6{
     grid-area: c6;
     margin: 10px;
     background-color: rgba(0, 255, 255, 0.158);
     border-radius: 35px;    
+    cursor: pointer;
 }
 
 #k1{
@@ -430,6 +403,7 @@ nav {
     margin: 10px;
     background-color: rgba(0, 255, 255, 0.158);
     border-radius: 35px;
+    
 }
 #k2{
     grid-area: k2;
@@ -469,18 +443,12 @@ nav {
     border-radius: 35px;    
 }
 
-
-
-
 h1{
     font-size: 32px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 3vh;
     margin-left: 4vw;
 }
-
-
-
 
 h2{
     background: rgb(177, 137, 84);
@@ -594,27 +562,12 @@ h3{
     
 
     }
-    #nav-links a:hover {
-        color: darkgrey;
-        transition: ease 0.2s;
-
-    }
-
-    .logo-container{
-     
-        grid-area: bild;
-    }
-
-    
-    #logo{
-        width: 300px;
-        margin-top: 10vh;
-        border-radius: 50px;
-    }
-
 
     .nav-active{
         transform: none
+    }
+    .logo-active{
+        transform: none;
     }
 
     .mer-priser {
@@ -628,64 +581,7 @@ h3{
         max-height: 100%;
     }
 
-    #c1{
-        grid-area: c1;
-        margin: 10px;
-        background-color: rgba(0, 255, 255, 0.158);
-        border-radius: 35px;
-    }
-    #c2{
-        grid-area: c2;
-        margin: 10px;
-        background-color: rgba(0, 255, 255, 0.158);
-        border-radius: 35px;
-    }
-    #c3{
-        grid-area: c3;
-        margin: 10px;
-        background-color: rgba(0, 255, 255, 0.158);
-        border-radius: 35px;    
-    }
-
-
-    #c4{
-        grid-area: c4;
-        margin: 10px;
-        background-color: rgba(0, 255, 255, 0.158);
-        border-radius: 35px;
-    }
-    #c5{
-        grid-area: c5;
-        margin: 10px;
-        background-color: rgba(0, 255, 255, 0.158);
-        border-radius: 35px;
-    }
-    #c6{
-        grid-area: c6;
-        margin: 10px;
-        background-color: rgba(0, 255, 255, 0.158);
-        border-radius: 35px;    
-    }
-    h2{
-        background: rgb(177, 137, 84);
-        border-radius: 10px;  
-        padding: 20px;
-        border: 0px;
-        margin: 30px;
-    
-    
-    }
-    h3{
-      
-        background: rgb(177, 137, 84);
-        border-radius: 10px;  
-        padding: 40px;
-        border: 0px;
-        margin: 25px;
-    
-    
-    
-    }
+ 
 }
 
 

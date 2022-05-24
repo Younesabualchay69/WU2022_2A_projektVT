@@ -398,38 +398,6 @@ nav {
 
 
 }
-#fond-area_4{
-    grid-area: f4;
-    margin: 30px;
-    background-color: rgba(0, 255, 255, 0.158);
-    border-radius: 35px; 
-    background-image: url("../img/oink.jpg");
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-}
-#fond-area_5{
-    grid-area: f5;
-    margin: 30px;
-    background-color: rgba(0, 255, 255, 0.158);
-    border-radius: 35px;    
-    background-image: url("..//img/mone.jpg");
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-    
-}
-#fond-area_6{
-    grid-area: f6;
-    margin: 30px;
-    background-color: rgba(0, 255, 255, 0.158);
-    border-radius: 35px;    
-    background-image: url("..//img/menoe.jpg");
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-
-}
 
 #c1{
     grid-area: c1;
@@ -528,6 +496,7 @@ h1{
 }
 
 h3{
+    
     font-weight: 200;
     font-size: 15px;
     margin: 10px;
@@ -576,13 +545,19 @@ h3{
 }
 .left{
     background-color:rgba(88, 96, 111, 0.8) ;
+    
     display: flex;
     justify-content: center;
-     align-items: center;
+    align-items: center;
     border-radius: 10px;      
     margin: 10px;
     grid-area: dr;  
 
+}
+#para {
+   
+width: 100%;
+border-radius: 20%;
 }
 
 @media screen and (min-width: 800px) {
@@ -634,13 +609,12 @@ h3{
 
         display: grid;
        
-        grid-auto-rows: 35% 35% 35% 35%;    
-        grid-auto-columns: 50% 50%;   
+        grid-auto-rows: 15% 40% 45%;    
+        grid-auto-columns: 60% 40%;   
         grid-template-areas: 
-        "f2 f1"
-        "f2 f3"
-        "f5 f4 "
-        "f6 f4 ";
+        "f1 f"
+        "f1 f2"
+        "f3 f3";
     }
 
     #kontakt-wrapper{

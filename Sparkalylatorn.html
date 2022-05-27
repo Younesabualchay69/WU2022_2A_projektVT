@@ -9,23 +9,56 @@
 </head>
 <body>
     <header id="header_2">    
-        <img src="img/logga.jpg" id="home-btn" onclick="javascript: window.location = 'index.html';">
-      
+        <img src="img/logga.jpg" alt="hemknapp" id="home-btn" onclick="javascript: window.location = 'index.html';">
 
+
+            <ul id="nav-links_delsida" class="nav-active_delsida">
+                <li><a href="allt_om_aktier.html">allt om aktier</a></li>
+                <li><a href="allt_om_fonder.html">Allt om fonder</a></li>
+                <li><a href="kontakta_oss.html">Kontakta oss</a></li>
+            </ul>
+
+        <div id="burger_delsida">
+            <div id="line_1" class="burger_line_delsida"></div>
+            <div id="line_2" class="burger_line_delsida"></div>
+            <div id="line_3" class="burger_line_delsida"></div>
+        </div> 
+        
     </header>
 
    
-    <div id="kalkyl" class="spara">
+    <main id="kalkyl" class="spara">
 
-        <section>
-            <h2>
+   
+    </main>
+  
+  
+    <footer>
+        <aside class="lefty">
+            <img src="img/logga.jpg" alt="Bild på logga">
 
-            </h2>
-        </section>    
+        </aside>
 
+        <section class="middy">
+                <ul class="footer_middle">   
+                    <h1>Våra partners</h1>
+                    <li class="space_1">NTI</li>
+                    <li class="space_1">Barack Obama</li>
+                    <li class="space_1">Spacex</li>
+                </ul>
+        </section>
 
-    
-    </div>
-    
+        <aside class="righty">
+            <ul class="footer_righty">
+                <li class="space"><h2>Instagram</h2></li>
+                <li class="space">@Frogz_of_wallstreetz</li>
+                <li class="space"><h2>Twitter</h2></li>
+                <li class="space">@Froggiez_in_wallstreet</li>
+            </ul>
+        </aside>
+
+    </footer>
+   
+    <script src="js/script_delsida.js"></script>
 </body>
 </html>

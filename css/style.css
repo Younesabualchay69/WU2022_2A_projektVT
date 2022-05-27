@@ -32,15 +32,13 @@ header{
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 20vh 80vh 15% 15% 15% 15% 15% 5%; 
+    grid-template-rows: 20vh 80vh 90vh 20vh 30vh 30vh; 
     grid-template-areas: 
     "he he"
     "bild bild"
     "c1 c2"
-    "c1 c2"
     "c3 c3"
     "c4 c4"
-    "c5 c6"
     "c5 c6" ;
 }
 #header_2{
@@ -61,11 +59,11 @@ header{
     height: 100vh;
     background-color:rgba(30, 85, 58, 0.87);
     position: fixed;
-    width: 100vw;
+    width: 100%;
     list-style: none;
     transition: all 0.5s;
-    border-radius: 5px;
     z-index: 2;
+
     
 }
 #nav-links_delsida a {
@@ -103,7 +101,7 @@ header{
 
     display: grid;
     
-    grid-auto-rows: 90vh 90vh 120vh ;
+    grid-auto-rows: 80vh 90vh 100vh ;
     grid-auto-columns: 100%;   
     grid-template-areas: 
     "f1"
@@ -115,13 +113,11 @@ header{
 #kontakt-wrapper{
 
     display: grid;
-    grid-auto-rows: 25% 25% 25% 25%;
-    grid-auto-columns: 30% 70%;   
+    grid-auto-rows: 35vh 50vh ;
+    grid-auto-columns: 100%; 
     grid-template-areas: 
-    "k7 k7"
-    "k1 k2"
-    "k3 k4"
-    "k5 k6";
+    "k1"
+    "k2";
 
 }
 
@@ -130,6 +126,7 @@ header{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background-color: rgb(151, 114, 67);
 }
 
 #home-btn {
@@ -420,42 +417,21 @@ nav {
     "db db"
     ;
 }
+
 #fond-area_4{
-    grid-area: f4;
-    margin: 30px;
-    background-color: rgba(59, 220, 245, 0.158);
-    border-radius: 25px;
-    cursor: pointer;
-    border-style: double;
-    display: flex;
-    contain: content;
-    place-content: center;
-    background-image: url(..//img/Dream.png);
+    display: none;
+
 }
 #fond-area_5{
-    grid-area: f5;
-    margin: 30px;
-    background-color: rgba(59, 220, 245, 0.158);
-    border-radius: 25px;
-    cursor: pointer;
-    place-content: center;
-    border-style: double;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows:50% 50%; 
-    grid-template-areas: 
-    "dy dr"
-    "db db";
-
-
+    display: none;
     
 }
-
 #c1{
     grid-area: c1;
     margin: 10px;
     background-color: rgba(0, 255, 255, 0.158);
     border-radius: 35px;
+    contain: content;
     cursor: pointer;
 }
 #c2{
@@ -464,6 +440,7 @@ nav {
     background-color: rgba(0, 255, 255, 0.158);
     border-radius: 35px;
     cursor: pointer;
+    contain: content;
 }
 #c3{
     grid-area: c3;
@@ -471,6 +448,7 @@ nav {
     background-color: rgba(0, 255, 255, 0.158);
     border-radius: 35px;    
     cursor: pointer;
+    contain: content;
 }
 
 #c4{
@@ -479,6 +457,7 @@ nav {
     background-color: rgba(0, 255, 255, 0.158);
     border-radius: 35px;
     cursor: pointer;
+    contain: content;
 }
 #c5{
     grid-area: c5;
@@ -486,6 +465,7 @@ nav {
     background-color: rgba(0, 255, 255, 0.158);
     border-radius: 35px;
     cursor: pointer;
+    contain: content;
 }
 #c6{
     grid-area: c6;
@@ -493,55 +473,98 @@ nav {
     background-color: rgba(0, 255, 255, 0.158);
     border-radius: 35px;    
     cursor: pointer;
+    contain: content;
+}
+.wrapper_content{
+    margin: 5vh;
+    list-style: none;
 }
 
-#k1{
+.kont_top{
     grid-area: k1;
-    margin: 10px;
-    background-color: rgba(0, 255, 255, 0.158);
-    border-radius: 35px;
+    border-radius: 10px;
+    background-color: rgba(91, 128, 119, 0.815);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border-style: double;
+    font-weight: bolder;
     
 }
-#k2{
-    grid-area: k2;
-    margin: 10px;
-    background-color: rgba(0, 255, 255, 0.158);
-    border-radius: 35px;
+.kont_middle{
+    height: 60vh;
+    width: 80vw;
+    margin: 50px;
+    transform: translateY(-10vh);
+    display: grid;
+    grid-template-areas: 
+    "on tw"
+    "tr fo"    
+    "fi si";
+    border-radius: 10px;
+    background-color: rgba(162, 132, 78, 0.94);
+    z-index: 1;
 }
-#k3{
-    grid-area: k3;
-    margin: 10px;
-    background-color: rgba(0, 255, 255, 0.158);
-    border-radius: 35px;    
+.kont_btm{
+    grid-area: k2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(152, 54, 54, 0.906);
+    border-radius: 10px;    
+    border-style: double;
 }
 
-#k4{
-    grid-area: k4;
-    margin: 10px;
-    background-color: rgba(0, 255, 255, 0.158);
-    border-radius: 35px;
+#one{
+    list-style: none;
+    grid-area: on;
+    border-style: double;
+    display: flex;
+    justify-content: center;
 }
-#k5{
-    grid-area: k5;
-    margin: 10px;
-    background-color: rgba(0, 255, 255, 0.158);
-    border-radius: 35px;
+#two{
+    list-style: none;
+    grid-area: tw;
+    border-style: double;
+    display: flex;
+    justify-content: center;
 }
-#k6{
-    grid-area: k6;
-    margin: 10px;
-    background-color: rgba(0, 255, 255, 0.158);
-    border-radius: 35px;    
+#three{
+    list-style: none;
+    border-style: double;
+    grid-area: tr;
+    display: flex;
+    justify-content: center;
 }
-#k7{
-    grid-area: k7;
-    margin: 10px;
-    background-color: rgba(0, 255, 255, 0.158);
-    border-radius: 35px;    
+#four{
+    list-style: none;
+    grid-area: fo;
+    border-style: double;
+    display: flex;
+    justify-content: center;
+}
+#five{
+    list-style: none;
+    grid-area: fi;
+    border-style: double;
+    display: flex;
+    justify-content: center;
+}
+#six{
+    list-style: none;
+    grid-area: si;
+    border-style: double;
+    display: flex;
+    justify-content: center;
 }
 
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-weight: bolder;
+
 }
 
 h2{
@@ -640,11 +663,8 @@ h2{
     justify-content: left;
     border-style: double;
     flex-direction: row;
-  
     border-radius: 10px;      
     margin: 10px;
- 
-
     grid-area: dl;
 
 }
@@ -669,6 +689,63 @@ border-radius: 30px;
     margin: 15px;
 }
 
+
+footer {
+
+    background-color: rgba(120, 154, 179, 0.676);
+    height: 24vh;
+    display: flex;
+    justify-content: space-between;
+    contain: content;
+    margin-top: 5vh;
+}
+
+.lefty{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.righty{
+    display: flex;
+    justify-content: center;
+}
+
+.middy{
+    display: flex;
+
+    flex-direction: row;
+
+}
+
+.footer_righty{
+    margin: 3vh;
+    list-style: none;
+
+}
+
+.footer_middle{
+    margin: 3vh;
+    list-style: none;
+
+
+}
+
+.space{
+    margin: 5px;
+    list-style: none;
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+
+.space_1{
+    margin: 10px;
+    list-style: none;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 @media screen and (min-width: 800px) {
 
     #burger {
@@ -690,7 +767,7 @@ border-radius: 30px;
      
     #grid_wrapper{
         grid-auto-columns: 1fr 1fr 1fr;
-        grid-auto-rows: 15vh 15vh 70vh 50vh 40vh 40vh 30vh;
+        grid-template-rows: 15vh 15vh 70vh 50vh 40vh 40vh 20vh;
         grid-template-areas: 
         "he he he"
         "na na na"
@@ -699,19 +776,50 @@ border-radius: 30px;
         "c1 c4 c4"
         "c5 c6 c6"
         "c5 c6 c6";
+        contain: content;
     }
     
     #content_akt{
 
         display: grid;
        
-        grid-auto-rows: 40% 40% 35% 35%;
+        grid-auto-rows: auto;
         grid-auto-columns: 50% 50%;   
         grid-template-areas: 
         "a1 a2"
         "a1 a3"
         "a5 a4"
         "a6 a4 ";
+    }
+    #fond-area_4{
+        grid-area: f4;
+        margin: 30px;
+        background-color: rgba(59, 220, 245, 0.158);
+        border-radius: 25px;
+        cursor: pointer;
+        border-style: double;
+        display: flex;
+        contain: content;
+        place-content: center;
+        background-image: url(..//img/Dream.png);
+    }
+    #fond-area_5{
+        grid-area: f5;
+        margin: 30px;
+        background-color: rgba(59, 220, 245, 0.158);
+        border-radius: 25px;
+        cursor: pointer;
+        place-content: center;
+        border-style: double;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows:50% 50%; 
+        grid-template-areas: 
+        "dy dr"
+        "db db";
+
+
+        
     }
 
     #content_fond{
@@ -732,15 +840,8 @@ border-radius: 30px;
 
     #kontakt-wrapper{
 
-        display: grid;
-        grid-auto-rows: 25% 25% 25% 25%;
-        grid-auto-columns: 30% 70%;   
-        grid-template-areas: 
-        "k7 k7"
-        "k1 k2"
-        "k3 k4"
-        "k5 k6";
-        margin: 150px;
+      margin-left: 30vh;
+      margin-right: 30vh;
     }
     nav {
         display: flex;
@@ -763,7 +864,7 @@ border-radius: 30px;
     
 
     }
-
+   
     .nav-active{
         transform: none
     }

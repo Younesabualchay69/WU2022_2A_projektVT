@@ -619,6 +619,17 @@ h1{
     justify-content: center;
     align-items: center;  
     font-weight: bolder;
+    font-size: xx-large;
+
+
+}
+
+.wrapper-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-weight: bolder;    
 
 }
 
@@ -634,6 +645,8 @@ h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
+
+
 #home{
     
     margin: 50px;  
@@ -913,7 +926,6 @@ footer {
     #fond-area_4{
         grid-area: f4;
         margin: 30px;
-        background-color: rgba(22,30,41,255);
         border-radius: 25px;
         cursor: pointer;
         border-style: double;
@@ -932,6 +944,7 @@ footer {
         place-content: center;
         border-style: double;
         display: grid;
+        margin-right: 10vw;
         grid-template-columns: 1fr 1fr;
         grid-auto-rows:50% 50%; 
         grid-template-areas: 

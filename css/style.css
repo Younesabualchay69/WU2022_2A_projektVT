@@ -4,6 +4,7 @@
     box-sizing: content-box;
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    
   
 
 
@@ -606,11 +607,13 @@ h2{
     grid-area: dy;
     font-size: x-large;
     border-style: double;
+    contain: content;
 }
 
 .top{
     background-color:rgba(77, 118, 110, 0.662) ;
     display: flex;
+    contain: content;
     justify-content: center;
     align-items: center;
     text-decoration:unset;
@@ -627,6 +630,7 @@ h2{
     justify-content: left;
     border-style: double;
     flex-direction: row;
+    contain: content;
     border-radius: 10px;      
     margin: 10px;
     z-index: 1;
@@ -638,6 +642,7 @@ h2{
     display: flex;
     justify-content: left;
     border-style: double;
+    contain: content;
     flex-direction: row;
     border-radius: 10px;      
     margin: 10px;
@@ -661,6 +666,7 @@ h2{
     background-color:rgba(47, 72, 71, 0.8) ;
     display: flex;
     justify-content: left;
+    contain: content;
     border-style: double;
     flex-direction: row;
     border-radius: 10px;      
@@ -673,6 +679,7 @@ h2{
     border-style: double;
     display: flex;
     justify-content: center;
+    contain: content;
     border-radius: 10px;      
     margin: 10px;
     grid-area: dr;  

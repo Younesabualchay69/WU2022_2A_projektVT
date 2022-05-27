@@ -4,18 +4,19 @@
     box-sizing: content-box;
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
-  
-
-
-    }
+}
 body{
     background: rgb(39, 128, 86);
-    background-image:url(../img/photo-1488415032361-b7e238421f1b.webp.png) ;
+    background-image:url(../img/Skärmbild\ \(98\).png) ;
     background-size: 1400px;   
     background-position: fixed;
+
  
     
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 header{
@@ -40,7 +41,8 @@ header{
     "c1 c2"
     "c3 c3"
     "c4 c4"
-    "c5 c6" ;
+    "c6 c6" ;
+    
 }
 #header_2{
     background-color: rgba(240, 255, 255, 0.034);
@@ -112,7 +114,7 @@ header{
 }
 
 #kontakt-wrapper{
-
+    margin: 1vh;
     display: grid;
     grid-auto-rows: 35vh 50vh ;
     grid-auto-columns: 100%; 
@@ -434,6 +436,10 @@ nav {
     border-radius: 35px;
     contain: content;
     cursor: pointer;
+    overflow: scroll;
+}
+#c1::-webkit-scrollbar{
+    display: none;
 }
 #c2{
     grid-area: c2;
@@ -442,6 +448,11 @@ nav {
     border-radius: 35px;
     cursor: pointer;
     contain: content;
+    overflow: scroll;
+
+}
+#c2::-webkit-scrollbar{
+    display: none;
 }
 #c3{
     grid-area: c3;
@@ -459,14 +470,31 @@ nav {
     border-radius: 35px;
     cursor: pointer;
     contain: content;
+    overflow: scroll;
 }
+#c4::-webkit-scrollbar{
+    display: none;
+}
+
 #c5{
-    grid-area: c5;
-    margin: 10px;
-    background-color: rgba(0, 255, 255, 0.158);
-    border-radius: 35px;
-    cursor: pointer;
-    contain: content;
+    display: none;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    
+    border-radius: 10px;
+ 
+}
+
+.wrapper_img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 5px;
+    
+    border-radius: 10px;
+
 }
 #c6{
     grid-area: c6;
@@ -474,11 +502,22 @@ nav {
     background-color: rgba(0, 255, 255, 0.158);
     border-radius: 35px;    
     cursor: pointer;
-    contain: content;
+    contain: content;  
+    overflow: scroll;
+    
+
 }
+
+#c6::-webkit-scrollbar{
+    display: none;
+}
+
 .wrapper_content{
     margin: 5vh;
     list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .kont_top{
@@ -608,6 +647,11 @@ h2{
     font-size: x-large;
     border-style: double;
     contain: content;
+    overflow: scroll;
+}
+
+.yxe::-webkit-scrollbar{
+    display: none;
 }
 
 .top{
@@ -623,7 +667,12 @@ h2{
     grid-area: dt;
     font-size: 50px;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    overflow: scroll;
 }
+.top::-webkit-scrollbar{
+    display: none;
+}
+
 .bottom{
     background-color:rgba(47, 72, 71, 0.8) ;
     display: flex;
@@ -635,7 +684,29 @@ h2{
     margin: 10px;
     z-index: 1;
     grid-area: db;
+    overflow: scroll;
 }
+.bottom::-webkit-scrollbar{
+    display: none;
+}
+
+.bottom_text{
+
+    margin: 20px;
+
+
+    contain: content;
+    cursor: pointer;
+    overflow: scroll;    
+    z-index: 1;
+    grid-area: db;
+}
+
+.bottom_text::-webkit-scrollbar{
+    display: none;
+}
+
+
 
 #more{ 
     background-color:rgba(47, 72, 71, 0.8) ;
@@ -672,8 +743,13 @@ h2{
     border-radius: 10px;      
     margin: 10px;
     grid-area: dl;
+    overflow: scroll;
 
 }
+.right::-webkit-scrollbar{
+    display: none;
+}
+
 .left{
     background-color:rgba(47, 72, 71, 0.8) ;
     border-style: double;
@@ -683,8 +759,13 @@ h2{
     border-radius: 10px;      
     margin: 10px;
     grid-area: dr;  
+    overflow: scroll;
 
 }
+.left::-webkit-scrollbar{
+    display: none;
+}
+
 #para {
 
 width: 100%;
@@ -699,7 +780,7 @@ border-radius: 30px;
 
 footer {
 
-    background-color: rgba(120, 154, 179, 0.676);
+    background-color: rgba(73, 104, 126, 0.676);
     height: 24vh;
     display: flex;
     justify-content: space-between;
@@ -753,6 +834,10 @@ footer {
     font-size: large;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+#snigel{
+    max-width: 50%;
+}
 @media screen and (min-width: 800px) {
 
     #burger {
@@ -801,14 +886,15 @@ footer {
     #fond-area_4{
         grid-area: f4;
         margin: 30px;
-        background-color: rgba(59, 220, 245, 0.158);
+        background-color: rgba(22,30,41,255);
         border-radius: 25px;
         cursor: pointer;
         border-style: double;
         display: flex;
         contain: content;
         place-content: center;
-        background-image: url(..//img/Dream.png);
+        background-size: cover;
+        background-image: url(../img/wood.png);
     }
     #fond-area_5{
         grid-area: f5;
@@ -871,6 +957,20 @@ footer {
     
 
     }
+    
+    #c5{
+    grid-area: c5;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-radius: 35px;
+    cursor: pointer;
+    contain: content;
+    overflow: scroll;
+    }
+
+    #c5::-webkit-scrollbar{
+    display: none;
+    }
    
     .nav-active{
         transform: none
@@ -889,7 +989,12 @@ footer {
     .mer-priser * {
         max-height: 100%;
     }
+    #snigel{
+    margin-left: 20vh;
+    margin-right: 20vh;
 
+
+    }
     
     
     
